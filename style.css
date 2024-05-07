@@ -158,6 +158,12 @@ a>img{
 	margin-right: 0;
 }
 
+@media screen and (max-width:475px) {
+	.aside-pic{
+		margin-left: 1rem;
+	}
+}
+
 @media screen and (min-width:670px) {
 	main{
 		border-radius: .5rem;
