@@ -1,0 +1,147 @@
+:root{
+	--red: hsl(1, 90%, 64%);
+	--blue: hsl(219, 85%, 26%);
+	--white: hsl(0, 0%, 100%);
+	--very-light-grayish-blue: hsl(210, 60%, 98%);
+	--light-grayish-blue-1: hsl(211, 68%, 94%);
+	--light-grayish-blue-2: hsl(205, 33%, 90%);
+	--grayish-blue: hsl(219, 14%, 63%);
+	--dark-grayish-blue: hsl(219, 12%, 42%);
+	--very-dark-blue: hsl(224, 21%, 14%);
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	font-family: 'Plus Jakarta Sans',sans-serif;
+	background: var(--very-light-grayish-blue);
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h1,h2,h3,p{
+	margin: 0;
+}
+
+main{
+	max-width: 670px;
+	padding: 2rem 1rem;
+	background: var(--white);
+}
+
+img{
+	width: 40px;
+	margin-right: .75rem;
+}
+
+h1{
+	font-size: 1.2rem;
+}
+
+h2{
+	font-size: .8rem;
+	background: var(--blue);
+	color: var(--white);
+	padding: .1rem .6rem;
+	border-radius: .25rem;
+	margin-left: .5rem;
+}
+
+article{
+	align-items: start;
+	padding: 1rem;
+	border-radius: .5rem;
+}
+
+article+article{
+	margin-top: .5rem;
+}
+
+article span{
+	font-weight: 700;
+}
+
+em{
+	color: var(--dark-grayish-blue);
+	font-style: normal;
+	font-weight: 500;
+}
+
+b{
+	font-weight: 800;
+}
+
+b:hover{
+	cursor:pointer;
+}
+
+b.gray-bold:hover,.title em:hover,article span:hover{
+	cursor: pointer;
+	color: var(--blue);
+}
+
+article>div{
+	font-size: .9rem;
+}
+
+.blue-bold{
+	color: var(--blue);
+}
+
+.gray-bold{
+	color: var(--dark-grayish-blue);
+}
+
+.flex{
+	display: flex;
+}
+
+.title{
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 2rem;
+}
+
+.title .flex{
+	align-items: center;
+}
+
+.new{
+	background: var(--very-light-grayish-blue);
+}
+
+.new>div>div:first-child::after{
+	content: "";
+	width: 10px;
+	height: 10px;
+	background: var(--red);
+	border-radius: 50%;
+	margin-left: .2rem;
+	display: inline-block;
+}
+
+.timestamp{
+	color: var(--grayish-blue);
+	margin-top: .25rem;
+}
+
+.message{
+	border: 1px solid var(--light-grayish-blue-2);
+	padding: 1rem;
+	margin-top: .75rem;
+	border-radius: .5rem;
+	color:var(--dark-grayish-blue);
+	font-weight: 500;
+}
+
+@media screen and (min-width:670px) {
+	main{
+		border-radius: .5rem;
+		padding: 2rem 2rem 0;
+	}
+}
