@@ -37,6 +37,7 @@ main{
 img{
 	width: 40px;
 	margin-right: .75rem;
+	vertical-align: bottom;
 }
 
 h1{
@@ -74,6 +75,11 @@ em{
 
 b{
 	font-weight: 800;
+}
+
+a{
+	text-decoration: none;
+	color: var(--very-dark-blue);
 }
 
 b:hover{
@@ -137,6 +143,19 @@ article>div{
 	border-radius: .5rem;
 	color:var(--dark-grayish-blue);
 	font-weight: 500;
+	display: inline-block;
+}
+
+.message:hover{
+	background: var(--light-grayish-blue-1);
+}
+
+.aside-pic{
+	margin-left: auto;
+}
+
+a>img{
+	margin-right: 0;
 }
 
 @media screen and (min-width:670px) {
